@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE letter SYSTEM "../dtd/letter.dtd" >
 <letter>
-  <to>msg@msg.de</to>
+  <to>jobapplication@company.xy</to>
+  <cc>prietena@rds.ro</cc>
+  <bcc>mama@rds.ro</bcc>
   <from>john.doe@rds.ro</from>
   <message>Job Application</message>
 </letter>
