@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE letter SYSTEM "../dtd/letter.dtd" >
+<letter>
+  <to>msg@msg.de</to>
+  <from>john.doe@rds.ro</from>
+  <message>Job Application</message>
+</letter>

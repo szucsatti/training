@@ -1,0 +1,5 @@
+<!ELEMENT letter (to,cc?,from,message)>   
+<!ELEMENT to (#PCDATA)>   
+<!ELEMENT cc (#PCDATA)>   
+<!ELEMENT from (#PCDATA)>   
+<!ELEMENT message (#PCDATA)>
