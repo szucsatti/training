@@ -1,5 +1,7 @@
-<!ELEMENT letter (to,cc?,from,message)>   
+<!ELEMENT letters (letter+)>
+<!ELEMENT letter (to,cc?,from,heading,body)>   
 <!ELEMENT to (#PCDATA)>   
 <!ELEMENT cc (#PCDATA)>   
 <!ELEMENT from (#PCDATA)>   
-<!ELEMENT message (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>   
+<!ELEMENT body (#PCDATA)>
