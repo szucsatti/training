@@ -5,5 +5,7 @@ import java.util.List;
 public interface RoutingTable {
 
 	List<RoutingTableEntry> getRountingTableEntries();
+	
+	void addEntry(final RoutingTableEntry entry);
 
 }
