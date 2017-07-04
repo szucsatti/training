@@ -1,4 +1,4 @@
-package com.szucsatti.training.refactoring;
+package com.szucsatti.training.codequality;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package com.szucsatti.training.refactoring;
+package com.szucsatti.training.codequality;
 
 @SuppressWarnings("serial")
 public class ServiceException extends Exception {
