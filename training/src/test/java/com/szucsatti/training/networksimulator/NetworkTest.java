@@ -1,4 +1,4 @@
-package com.szucsatti.training;
+package com.szucsatti.training.networksimulator;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
