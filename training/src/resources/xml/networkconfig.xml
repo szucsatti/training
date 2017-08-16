@@ -20,7 +20,7 @@
 				<gateway>192.168.84.254</gateway>
 			</networkinterface>
 			<networkinterface>
-				<ip>192.174.0.45 </ip>
+				<ip>192.174.0.45</ip>
 				<mac>00-F0-22-1A-23-45</mac>
 				<netmask>255.0.0.0</netmask>
 				<gateway>192.168.84.254</gateway>

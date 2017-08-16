@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://www.example.org/simulator"
+	targetNamespace="http://www.example.org/simulator" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+	jxb:version="2.0">
+
+	<xsd:complexType name="Network">
+		<xsd:sequence>
+			<xsd:element name="name" maxOccurs="1" minOccurs="1" />
+			<xsd:element ref="Node" maxOccurs="unbounded" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="Node" type="Node" />
+
+	<xsd:complexType name="Node">
+		<xsd:sequence>
+			<xsd:element ref="NodeId" maxOccurs="1" minOccurs="1" />
+			<xsd:element ref="NetworkInterface" maxOccurs="unbounded"
+				minOccurs="0" />
+			<xsd:element ref="RoutingTable" maxOccurs="1"
+				minOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="NodeId" type="NodeId" />
+
+	<xsd:complexType name="NodeId">
+		<xsd:sequence>
+			<xsd:element name="hostname" type="xsd:string" maxOccurs="1"
+				minOccurs="1" />
+			<xsd:element name="expires" type="xsd:int" maxOccurs="1"
+				minOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="NetworkInterface" type="NetworkInterface" />
+
+	<xsd:complexType name="NetworkInterface">
+		<xsd:sequence>
+			<xsd:element name="ip" type="xsd:string" maxOccurs="1"
+				minOccurs="1" />
+			<xsd:element name="mac" type="xsd:string" maxOccurs="1"
+				minOccurs="1" />
+			<xsd:element name="netmask" type="xsd:string" maxOccurs="1"
+				minOccurs="1" />
+			<xsd:element name="gateway" type="xsd:string" maxOccurs="1"
+				minOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="RoutingTable" type="RoutingTable" />
+
+	<xsd:complexType name="RoutingTable">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<jxb:class
+					implClass="com.szucsatti.training.networksimulator.RoutingTableExtended" />
+				<xsd:javaType
+					name="com.szucsatti.training.networksimulator.RoutingTableExtended"
+					xmlType="RoutingTable" />
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="RoutingTableEntry" maxOccurs="unbounded"
+				minOccurs="0"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="RoutingTableEntry" type="RoutingTableEntry" />
+
+	<xsd:complexType name="RoutingTableEntry">
+		<xsd:sequence>
+			<xsd:element name="gateway" type="xsd:string" maxOccurs="1"
+				minOccurs="1"></xsd:element>
+			<xsd:element name="destination" type="xsd:string" maxOccurs="1"
+				minOccurs="1"></xsd:element>
+			<xsd:element name="metric" type="xsd:int" maxOccurs="1"
+				minOccurs="1"></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>
