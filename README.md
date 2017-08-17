@@ -1,1 +1,1 @@
-# training
+# resources for java training
