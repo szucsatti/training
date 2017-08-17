@@ -4,8 +4,7 @@
 		xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">Wireless Mesh
 		Network</Name>
 	<Node>
-	
-n		<NodeId>
+		<NodeId>
 			<Hostname>MSGN456-8</Hostname>
 			<Expires>100</Expires>
 		</NodeId>
