@@ -6,7 +6,7 @@
 
 	<xsd:complexType name="Network">
 		<xsd:sequence>
-			<xsd:element name="Name" maxOccurs="1" minOccurs="1" />
+			<xsd:element name="Name" type="xsd:string" maxOccurs="1" minOccurs="1" />
 			<xsd:element ref="Node" maxOccurs="unbounded" minOccurs="0" />
 		</xsd:sequence>
 	</xsd:complexType>
