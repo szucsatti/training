@@ -1,16 +1,17 @@
 package com.szucsatti.training.networksimulator;
 
-import com.szucsatti.networksimulator.RoutingTable;
-import com.szucsatti.networksimulator.RoutingTableEntry;
+import com.szucsatti.generated.networksimulator.RoutingTable;
+import com.szucsatti.generated.networksimulator.RoutingTableEntry;
 
-public class RoutingTableExtended extends RoutingTable{
+public class RoutingTableExtended extends RoutingTable {
 
-	public RoutingTableExtended(){
-		
-	}
-	
-	public void addEntry(final RoutingTableEntry entry) {
-		getRoutingTableEntry().add(entry);
-	}
+  public RoutingTableExtended() {
+
+  }
+
+
+  public void addEntry(final RoutingTableEntry entry) {
+    getRoutingTableEntry().add(entry);
+  }
 
 }
